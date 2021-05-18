@@ -11,6 +11,7 @@
     // ## Array Cardio Day 1
 
     // Some data we can work with
+//Object
 
     const inventors = [
       { first: 'Albert', last: 'Einstein', year: 1879, passed: 1955 },
@@ -27,6 +28,7 @@
       { first: 'Hanna', last: 'Hammarström', year: 1829, passed: 1909 }
     ];
 
+//Array
     const people = [
       'Bernhard, Sandra', 'Bethea, Erin', 'Becker, Carl', 'Bentsen, Lloyd', 'Beckett, Samuel', 'Blake, William', 'Berger, Ric', 'Beddoes, Mick', 'Beethoven, Ludwig',
       'Belloc, Hilaire', 'Begin, Menachem', 'Bellow, Saul', 'Benchley, Robert', 'Blair, Robert', 'Benenson, Peter', 'Benjamin, Walter', 'Berlin, Irving',
@@ -37,7 +39,13 @@
     
     // Array.prototype.filter()
     // 1. Filter the list of inventors for those who were born in the 1500's
-
+const fifteen = inventors.filter(function(inventor){
+if(inventor.year>=15000 %% inventor.year <= 1600){
+  return true; //Keep it!
+}
+console.log(fifteen);
+console.table(fifteen;)
+});
     // Array.prototype.map()
     // 2. Give us an array of the inventors first and last names
 
